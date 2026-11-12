@@ -1,0 +1,569 @@
+
+/* USED CARS HERO SECTION */
+
+.used-hero {
+    min-height: 620px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(120deg, #101e32, #263f5d);
+    overflow: hidden;
+}
+
+/* LEFT CONTENT */
+
+.used-hero-content {
+    flex: 1;
+    color: white;
+}
+
+.used-tag {
+    color: #ff873c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.used-hero-content h1 {
+    font-size: clamp(35px, 5vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.used-hero-content h1 span {
+    color: #ff873c;
+    display: block;
+}
+
+.used-description {
+    color: #d1dbea;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+
+.used-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 45px;
+}
+
+.used-primary-btn,
+.used-secondary-btn {
+    display: inline-block;
+    padding: 14px 23px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.used-primary-btn {
+    background: #f26b21;
+    color: white;
+}
+
+.used-primary-btn:hover {
+    background: white;
+    color: #172b46;
+    transform: translateY(-4px);
+}
+
+.used-secondary-btn {
+    border: 1px solid white;
+    color: white;
+}
+
+.used-secondary-btn:hover {
+    background: white;
+    color: #172b46;
+}
+
+/* STATS */
+
+.used-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.used-stats h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.used-stats p {
+    color: #b9c7d8;
+    font-size: 12px;
+}
+
+/* RIGHT IMAGE */
+
+.used-hero-image {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+}
+
+.used-hero-image img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+
+.used-hero-image:hover img {
+    transform: scale(1.05);
+}
+
+.used-image-label {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background: rgba(15,30,48,0.88);
+    color: white;
+    padding: 14px 18px;
+    border-radius: 8px;
+}
+
+.used-image-label span {
+    color: #ff873c;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.used-image-label h3 {
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+
+    .used-hero {
+        flex-direction: column;
+        padding: 60px 6%;
+        gap: 35px;
+    }
+
+    .used-hero-content,
+    .used-hero-image {
+        width: 100%;
+    }
+
+    .used-hero-image img {
+        height: 250px;
+    }
+
+    .used-stats {
+        gap: 20px;
+    }
+
+}
+
+
+
+/* FEATURED USED CARS SECTION */
+
+.used-listing {
+    padding: 85px 8%;
+    background: #f3f6fa;
+}
+
+/* SECTION HEADING */
+
+.used-listing-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.used-listing-heading p {
+    color: #f26b21;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.used-listing-heading h2 {
+    color: #172b46;
+    font-size: clamp(28px, 4vw, 40px);
+    margin-bottom: 12px;
+}
+
+.used-listing-heading h2 span {
+    color: #f26b21;
+}
+
+.used-listing-heading h4 {
+    color: #777;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* CARDS PARENT */
+
+.used-car-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+/* INDIVIDUAL CARD */
+
+.used-car-card {
+    width: 310px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.used-car-card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.15);
+}
+
+/* CAR IMAGE */
+
+.used-car-image {
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+
+.used-car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.used-car-card:hover .used-car-image img {
+    transform: scale(1.07);
+}
+
+.used-car-image span {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #f26b21;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* CAR INFORMATION */
+
+.used-car-info {
+    padding: 23px;
+}
+
+.used-car-info h3 {
+    color: #172b46;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.used-car-info p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+/* FUEL AND TRANSMISSION */
+
+.used-car-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.used-car-details span {
+    background: #f1f4f8;
+    color: #52647a;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+/* ENQUIRE BUTTON */
+
+.used-car-info a {
+    display: inline-block;
+    color: #f26b21;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.used-car-info a:hover {
+    color: #172b46;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px) {
+
+    .used-listing {
+        padding: 55px 6%;
+    }
+
+    .used-car-card {
+        width: 100%;
+        max-width: 380px;
+    }
+
+}
+
+/* =================================
+   CHOOSE BY BUDGET SECTION
+================================= */
+
+.budget-section {
+    padding: 80px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #071a35,
+        #0b2b50,
+        #071a35
+    );
+}
+
+
+/* BUDGET HEADING */
+
+.budget-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.budget-heading p {
+    color: #65baff;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.budget-heading h2 {
+    color: white;
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.budget-heading h2 span {
+    color: #52b5ff;
+}
+
+.budget-heading h4 {
+    color: #c5d8ed;
+    font-weight: normal;
+}
+
+
+/* BUDGET CONTAINER */
+
+.budget-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* BUDGET CARD */
+
+.budget-card {
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #e7f2ff
+    );
+
+    padding: 30px 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    border: 1px solid rgba(90, 170, 255, 0.3);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+
+    transition: all 0.4s ease;
+}
+
+
+/* RUPEE ICON */
+
+.budget-icon {
+    width: 55px;
+    height: 55px;
+
+    background: linear-gradient(
+        135deg,
+        #071a35,
+        #1769b5
+    );
+
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    margin: 0 auto 18px;
+
+    box-shadow: 0 5px 15px rgba(10, 70, 140, 0.35);
+}
+
+
+/* BUDGET TITLE */
+
+.budget-card h3 {
+    color: #09264b;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+
+/* BUDGET DESCRIPTION */
+
+.budget-card p {
+    color: #586b80;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* BUDGET BUTTON */
+
+.budget-card a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: linear-gradient(
+        135deg,
+        #071a35,
+        #12549b,
+        #071a35
+    );
+
+    color: white;
+
+    padding: 11px 22px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* CARD HOVER */
+
+.budget-card:hover {
+    transform: translateY(-9px);
+
+    box-shadow: 0 15px 35px rgba(50, 145, 255, 0.25);
+
+    border-color: #55b5ff;
+}
+
+
+/* BUTTON HOVER */
+
+.budget-card a:hover {
+    background: linear-gradient(
+        135deg,
+        #1769b5,
+        #2695ed
+    );
+
+    box-shadow: 0 5px 18px rgba(30, 130, 230, 0.4);
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+
+    .budget-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .budget-container {
+        grid-template-columns: 1fr;
+    }
+
+    .budget-heading h2 {
+        font-size: 27px;
+    }
+
+}
+.budget-car-section {
+    padding: 65px 6%;
+    margin-top: 25px;
+    background: linear-gradient(135deg, #0b1d35, #142d50);
+    scroll-margin-top: 90px;
+}
+
+.budget-car-section h2 {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.budget-car-section p {
+    color: #b8cce5;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.budget-car-section .used-car-container {
+    margin-top: 25px;
+}
+
+.budget-car-section .used-car-card {
+    transition: 0.3s ease;
+}
+
+.budget-car-section .used-car-card:hover {
+    transform: translateY(-8px);
+}
